@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import  SpeedInsights  from "@vercel/speed-insights/astro"
+import Analytics from '@vercel/analytics/astro'
 interface Props {
   title: string;
   description?: string;
@@ -94,6 +95,7 @@ const fullTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
     </div>
     <Footer />
     <SpeedInsights />
+    <Analytics />
   </body>
 </html>
 
