@@ -1,0 +1,37 @@
+---
+import ThemeToggle from '../components/ThemeToggle.astro';
+
+---
+
+<header
+  class="top-0 z-50 bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-800 font-poppins w-full"
+>
+  <nav class="container mx-auto px-4 py-4 relative z-10">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-2">
+        <div class="w-16 h-16 rounded-lg flex items-center justify-center shadow-lg">
+          <img src="/logo.jpg" alt="Logo SosaRepa" class="w-16 h-16 rounded-full object-contain" />
+        </div>
+        <span class="hidden md:block text-lg font-semibold text-white">SosaRepa</span>
+      </a>
+
+      <!-- Navegación y opciones -->
+      <div class="social-container flex items-center">
+        <!-- Redes sociales -->
+        <div class="flex gap-2">
+          <a href="https://instagram.com" target="_blank" class="ig-icon p-2 rounded-full hover:bg-white/40 transition">
+            <img src="/icons/brand-instagram.svg" alt="Instagram" class="w-9 h-9" />
+          </a>
+          <a href="https://tiktok.com" target="_blank" class="tt-icon p-2 rounded-full hover:bg-white/40 transition">
+            <img src="/icons/brand-tiktok.svg" alt="TikTok" class="w-9 h-9" />
+          </a>
+          <a href="https://facebook.com" target="_blank" class="fb-icon p-2 rounded-full hover:bg-white/40 transition">
+            <img src="/icons/brand-facebook.svg" alt="Facebook" class="w-9 h-9" />
+          </a>
+        </div>
+      </div>
+      <ThemeToggle />
+    </div>
+  </nav>
+</header>
